@@ -31,7 +31,7 @@ Este taller está pensado para proporcionar a los estudiantes una introducción 
   - `Pandas`  
   - `Jupyter Notebook`  
 - **Recomendación:**  
-  Descarga e instala la distribución de [Anaconda](https://www.anaconda.com/), que incluye Python y todas las bibliotecas necesarias.
+  Descarga e instala la distribución de [Anaconda](https://www.anaconda.com/), que incluye Python y todas las bibliotecas necesarias. Los jupyter notebook utilizados pueden ser leidos y ejecutados en un editor de su preferencia. Yo utilizo Visual Studio Code, que puede descargarse en [Visual Studio Code](https://code.visualstudio.com/download)
 
 ---
 
