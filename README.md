@@ -1,3 +1,5 @@
+Hola
+
 # 📊 Taller de Análisis de Datos con Python y Pandas
 
 El taller se realiza en el Centro de Análisis de Datos y Supercómputo de la Universidad de Guadalajara.
