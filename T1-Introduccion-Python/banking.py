@@ -25,24 +25,27 @@ def deposito(saldo):
         saldo += monto 
     return saldo    
 
+def main():
+    while is_running:
+        print('##### Banking UI, opciones: #####')
+        print('1. Saldo')
+        print('2. Depósito')
+        print('3. Retiro')
+        print('4. Salir')
 
-while is_running:
-    print('##### Banking UI, opciones: #####')
-    print('1. Saldo')
-    print('2. Depósito')
-    print('3. Retiro')
-    print('4. Salir')
+        selection = int(input("Elige una opción:"))
 
-    selection = int(input("Elige una opción:"))
+        if selection==1:
+            mostrar_saldo()
+        elif selection==2:
+            saldo = deposito(saldo=saldo)
+        elif selection==3:
+            saldo = retiro(saldo=saldo)
+        elif selection==4:
+            print('Bye')
+            is_running = False
+        else:
+            print('Opción no válida')
 
-    if selection==1:
-        mostrar_saldo()
-    elif selection==2:
-        saldo = deposito(saldo=saldo)
-    elif selection==3:
-        saldo = retiro(saldo=saldo)
-    elif selection==4:
-        print('Bye')
-        is_running = False
-    else:
-        print('Opción no válida')
+if __name__ == '__main__':
+    main()
