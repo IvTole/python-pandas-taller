@@ -1,14 +1,11 @@
 #### Programita de banco donde tengas 4 opciones
 ### imprimir el saldo, hacer un retiro, hacer un deposito, salirte del progama
 
-is_running = True
-saldo = 0
-
-def mostrar_saldo():
+def mostrar_saldo(saldo):
     print(f'Tu saldo es {saldo} MXN')
 
 def retiro(saldo):
-    mostrar_saldo()
+    mostrar_saldo(saldo=saldo)
     monto = float(input("Cuanto deseas retirar:"))
     if monto >= saldo:
         print("Saldo insuficiente")
@@ -17,7 +14,7 @@ def retiro(saldo):
     return saldo
 
 def deposito(saldo):
-    mostrar_saldo()
+    mostrar_saldo(saldo=saldo)
     monto = float(input("Cuanto deseas depositar:"))
     if monto < 0:
         print("Opcion no valida")
@@ -26,6 +23,9 @@ def deposito(saldo):
     return saldo    
 
 def main():
+    is_running = True
+    saldo = 0
+
     while is_running:
         print('##### Banking UI, opciones: #####')
         print('1. Saldo')
@@ -36,7 +36,7 @@ def main():
         selection = int(input("Elige una opción:"))
 
         if selection==1:
-            mostrar_saldo()
+            mostrar_saldo(saldo=saldo)
         elif selection==2:
             saldo = deposito(saldo=saldo)
         elif selection==3:
