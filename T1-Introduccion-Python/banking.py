@@ -42,7 +42,7 @@ while is_running:
     elif selection==3:
         saldo = retiro(saldo=saldo)
     elif selection==4:
-        print('Bye')
+        print('Hasta luego')
         is_running = False
     else:
         print('Opción no válida')
