@@ -7,6 +7,7 @@ El taller se realiza en el Centro de Análisis de Datos y Supercómputo de la Un
 **🕐 Viernes, 13:00 - 15:00**  
 
 ** Fecha de inicio del taller:** Viernes 24 de enero de 2025
+** Fecha límite**
 
 ---
 
